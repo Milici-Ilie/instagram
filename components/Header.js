@@ -9,6 +9,9 @@ import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { doc, getDoc } from "firebase/firestore";
 import { userState } from "../atom/userAtom";
 import { db } from "../firebase";
+
+//🎧🎧[HEADER COMPONENT]🎧🎧
+
 export default function Header() {
   const [open, setOpen] = useRecoilState(modalState);
   const [currentUser, setCurrentUser] = useRecoilState(userState);
@@ -46,17 +49,18 @@ export default function Header() {
         <div className="cursor-pointer h-24 w-24 relative hidden lg:inline-grid">
           <Image
             src="http://www.jennexplores.com/wp-content/uploads/2015/09/Instagram_logo_black.png"
-            layout="fill"
+            layout="fill" //🎧🎧[HEADER COMPONENT]🎧🎧 we need also to write the 'layout='fill'' ==== the 'className=...' from bellow it's the Tailwind that make the IMG to fit the cointaer, also above in the <div> ... here ...</div> we also apply some styles with TCSS and also for different screens, mediaqueries
             className="object-contain"
             onClick={() => router.push("/")}
           />
+          {/* 🎧🎧[HEADER COMPONENT]🎧🎧 we dirrectly coppyed the IMG adress, but to make this work we need also to add the link security for this image inside of 'next.config.js', you will now what link because the NextJs will allert you with the message that contains that link */}
         </div>
         <div className="cursor-pointer h-24 w-10 relative  lg:hidden">
           <Image
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/800px-Instagram_logo_2016.svg.png"
             layout="fill"
             className="object-contain"
-            onClick={() => router.push("/")}
+            onClick={() => router.push("/")} //🎧🎧[HEADER COMPONENT]🎧🎧 the same thing like the IMG from above 👆 also note that the both IMG's has connection onClick when they are clicked ❗❗❗❗ NOTE -> this logo will replace the original one only when the screeen is smaller, on big screen the image/logo from above will be displayed
           />
         </div>
         {/* Middle */}
