@@ -246,7 +246,18 @@
 
                                                             ❗❗❗ 🎧🎧[HEADER COMPONENT]🎧🎧 ❗❗❗
 
-    ## ✅II. subtitlu
+    ## ✅II. -Adding the SEARCH BAR inside of the HEADER
+              -How to install Tailwind CSS forms (TCSS)
+
+> Tailwind CSS: check for Tailwind github, there you will those codes: 'https://github.com/tailwindlabs/tailwindcss-forms'
+> Installation: Terminal->>> npm install -D @tailwindcss/forms
+> Inside of 'tailwind.config.js' need to copy inside of 'plugins: [... this code:--->>> 'require('@tailwindcss/forms'),'... <<<---]
+> Tailwind CSS icons: 'https://heroicons.com/'
+> To install HeroIcons: Terminal => 'npm install @heroicons/react'
+
+[COMPONENTS/Header.js]/[]
+
+                                                            ❗❗❗ 🔎🔎[SEARCH BAR & TCSS]🔎🔎 ❗❗❗
 
     ## ✅III. subtitlu
 

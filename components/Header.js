@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useEffect } from "react";
-import { SearchIcon, PlusCircleIcon } from "@heroicons/react/outline";
+import { SearchIcon, PlusCircleIcon } from "@heroicons/react/outline"; //🔎🔎[SEARCH BAR & TCSS]🔎🔎 importing the icons
 import { HomeIcon } from "@heroicons/react/solid";
 import { useRecoilState } from "recoil";
 import { modalState } from "../atom/modalAtom";
@@ -69,6 +69,7 @@ export default function Header() {
           <div className="absolute top-2 left-2">
             <SearchIcon className="h-5 text-gray-500" />
           </div>
+          {/* 🔎🔎[SEARCH BAR & TCSS]🔎🔎  */}
           <input
             type="text"
             placeholder="Search"
