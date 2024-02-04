@@ -259,7 +259,12 @@
 
                                                             ❗❗❗ 🔎🔎[SEARCH BAR & TCSS]🔎🔎 ❗❗❗
 
-    ## ✅III. subtitlu
+    ## ✅III. -How to create the HOME Icons, Profile Icons and Menu Icon
+
+[COMPONENTS/Header.js]
+
+                                                        ❗❗❗ 🏠🏠[HOME ICON, PROFILE & MENU]🏠🏠 ❗❗❗
+
 
     ## ✅IV. subtitlu
 

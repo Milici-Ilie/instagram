@@ -76,6 +76,7 @@ export default function Header() {
             className="bg-gray-50 pl-10 border-gray-500 text-sm focus:ring-black focus:border-black rounded-md"
           />
         </div>
+        {/* 🔎🔎[SEARCH BAR & TCSS]🔎🔎 */}
 
         {/* Right */}
 
@@ -86,6 +87,7 @@ export default function Header() {
           />
           {currentUser ? (
             <>
+              {/* 🏠🏠[HOME ICON, PROFILE & MENU]🏠🏠 🏠🏠[HOME ICON, PROFILE & MENU]🏠🏠 */}
               <PlusCircleIcon
                 onClick={() => setOpen(true)}
                 className="h-6 cursor-pointer hover:scale-125 transition-tranform duration-200 ease-out"
@@ -98,6 +100,7 @@ export default function Header() {
               />
             </>
           ) : (
+            // 🏠🏠[HOME ICON, PROFILE & MENU]🏠🏠
             <button onClick={() => router.push("/auth/signin")}>Sign in</button>
           )}
         </div>
