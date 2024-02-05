@@ -44,6 +44,7 @@ export default function Header() {
   }
   return (
     <div className="shadow-sm border-b sticky top-0 bg-white z-30">
+      {/* 🍢🍢[STICKY HEADER]🍢🍢 we need to wrap all the Header content inside of a <div>...</div>, the 'div' from above 👆 🍢🍢[STICKY HEADER]🍢🍢 */}
       <div className="flex items-center justify-between max-w-6xl mx-4 xl:mx-auto">
         {/* Left */}
         <div className="cursor-pointer h-24 w-24 relative hidden lg:inline-grid">

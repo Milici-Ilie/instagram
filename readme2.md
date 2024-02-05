@@ -266,7 +266,14 @@
                                                         ❗❗❗ 🏠🏠[HOME ICON, PROFILE & MENU]🏠🏠 ❗❗❗
 
 
-    ## ✅IV. subtitlu
+    ## ✅IV. -How to create a STICKY HEADER
+
+> How to create a Sticky Header and be displayed on all pages
+> How to create shadow with Tailwind CSS
+
+[COMPONENTS/Header.js]/[]
+
+                                                            ❗❗❗ 🍢🍢[STICKY HEADER]🍢🍢 ❗❗❗
 
     ## ✅V. subtitlu
 
