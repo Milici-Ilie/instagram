@@ -275,7 +275,15 @@
 
                                                             ❗❗❗ 🍢🍢[STICKY HEADER]🍢🍢 ❗❗❗
 
-    ## ✅V. subtitlu
+    ## ✅V. -How to create multiple contents inside of a bigger content
+             -How to create multiple contents, GRID
+
+> How to create 'minifaker': Search on google for doc. Terminal: 'npm i minifaker' .... : 'https://www.npmjs.com/package/minifaker'
+> How to obtain fake avatars. Searh for: 'pravatar' =>>> 'https://i.pravatar.cc/150?img=3'
+
+[COMPONENTS/Feed.js]/[COMPONENTS/Stories.js]/[COMPONENTS/Story.js]
+
+                                                        ❗❗❗ 🧱🧱[MULTIPLE CONTENTS/GRID]🧱🧱 ❗❗❗
 
     ## ✅VI. subtitlu
 
