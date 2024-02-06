@@ -110,6 +110,7 @@ export default function Post({ img, userImg, caption, username, id }) {
           <BookmarkIcon className="btn" />
         </div>
       )}
+      {/* this is how you create the buttons from the Header components */}
 
       {/* Post comments */}
 
