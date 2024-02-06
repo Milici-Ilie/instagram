@@ -280,8 +280,11 @@
 
 > How to create 'minifaker': Search on google for doc. Terminal: 'npm i minifaker' .... : 'https://www.npmjs.com/package/minifaker'
 > How to obtain fake avatars. Searh for: 'pravatar' =>>> 'https://i.pravatar.cc/150?img=3'
+> How to create Hover effects on multiple items dynamic. Check the [Story.js] file.
+> To make the Overflow on horizontal to be scrooled and not overflowing, write in Tailwind: 'overflow-x-scroll'
+> How to install a scroll-bar with Tailwind CSS, first check on google for 'tailwind Css scrollbar': Terminal--->>> 'npm install --save-dev tailwind-scrollbar' ...... Also we need to add this line 'require('tailwind-scrollbar')' inside of 'tailwind.config.js' file
 
-[COMPONENTS/Feed.js]/[COMPONENTS/Stories.js]/[COMPONENTS/Story.js]
+[COMPONENTS/Feed.js]/[COMPONENTS/Stories.js]/[COMPONENTS/Story.js]/[tailwind.config.js]
 
                                                         ❗❗❗ 🧱🧱[MULTIPLE CONTENTS/GRID]🧱🧱 ❗❗❗
 
