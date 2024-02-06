@@ -22,12 +22,15 @@ import {
 } from "firebase/firestore";
 import { useRecoilState } from "recoil";
 import { userState } from "../atom/userAtom";
+
+// 💽💽[ANOTHER COMPONENT]💽💽
 export default function Post({ img, userImg, caption, username, id }) {
+  // 💽💽[ANOTHER COMPONENT]💽💽 here we are desctructuring the PROPS for 'Posts.js' file to send the info's
   const [comment, setComment] = useState("");
   const [comments, setComments] = useState([]);
   const [likes, setLikes] = useState([]);
   const [hasLiked, setHasLiked] = useState(false);
-  const [currentUser] = useRecoilState(userState)
+  const [currentUser] = useRecoilState(userState);
   useEffect(() => {
     const unsubscribe = onSnapshot(
       query(
@@ -46,9 +49,7 @@ export default function Post({ img, userImg, caption, username, id }) {
     );
   }, [db]);
   useEffect(() => {
-    setHasLiked(
-      likes.findIndex((like) => like.id === currentUser?.uid) !== -1
-    );
+    setHasLiked(likes.findIndex((like) => like.id === currentUser?.uid) !== -1);
   }, [likes]);
   async function likePost() {
     if (hasLiked) {

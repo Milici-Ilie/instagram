@@ -13,8 +13,9 @@ export default function Posts() {
       }
     );
     return unsubscribe;
-  }, [db]); 
+  }, [db]);
   return (
+    // 💽💽[ANOTHER COMPONENT]💽💽
     <div>
       {posts.map((post) => (
         <Post
@@ -25,6 +26,7 @@ export default function Posts() {
           img={post.data().image}
           caption={post.data().caption}
         />
+        // 💽💽[ANOTHER COMPONENT]💽💽 we will take those PROPS from 'Post.js' file to beneffit of the data
       ))}
     </div>
   );

@@ -288,7 +288,12 @@
 
                                                         ❗❗❗ 🧱🧱[MULTIPLE CONTENTS/GRID]🧱🧱 ❗❗❗
 
-    ## ✅VI. subtitlu
+    ## ✅VI. -How to create multiple Contents/Grid
+              -
+
+[COMPONENTS/Posts.js]/[COMPONENTS/Post.js]
+
+                                                        ❗❗❗ 💽💽[ANOTHER COMPONENT]💽💽 ❗❗❗
 
     ## ✅VII. subtitlu
 
