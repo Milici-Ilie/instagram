@@ -84,10 +84,12 @@ export default function Post({ img, userImg, caption, username, id }) {
         <p className="font-bold flex-1">{username}</p>
         <DotsHorizontalIcon className="h-5" />
       </div>
+      {/* here we are creating the Header Components wich contains the IMG user and the ... 3 dots for more info's */}
 
       {/* Post Image */}
 
       <img className="object-cover w-full" src={img} alt="" />
+      {/* the 'img' from 'src={img}' we are getting as a PROPS from the above funtion 👆 */}
 
       {/* Post Buttons  */}
 
