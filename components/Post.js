@@ -113,8 +113,10 @@ export default function Post({ img, userImg, caption, username, id }) {
       {/* this is how you create the buttons from the Header components */}
 
       {/* Post comments */}
+      {/* 💠💠[INPUT BOX/ COMMENTS]💠💠 */}
 
       <p className="p-5 truncate">
+        {/* truncate=lower name/title/etc. If the name osberlook after josmm */}
         {likes.length > 0 && (
           <p className="font-bold mb-1">{likes.length} likes</p>
         )}
@@ -141,6 +143,7 @@ export default function Post({ img, userImg, caption, username, id }) {
         </div>
       )}
 
+      {/* 💠💠[INPUT BOX/ COMMENTS]💠💠 👇 */}
       {/* Post input box */}
       {currentUser && (
         <form className="flex items-center p-4">

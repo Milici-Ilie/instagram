@@ -295,7 +295,12 @@
 
                                                         ❗❗❗ 💽💽[ANOTHER COMPONENT]💽💽 ❗❗❗
 
-    ## ✅VII. subtitlu
+    ## ✅VII. -How to create the INPUT box
+              -How to create the Input Field to add comments
+
+[COMPONENTS/Post.js]/[STYLES/global.css]
+
+                                                        ❗❗❗ 💠💠[INPUT BOX/ COMMENTS]💠💠 ❗❗❗
 
     ## ✅VIII. subtitlu
 
