@@ -9,6 +9,8 @@ export default function MiniProfile() {
     signOut(auth);
     setCurrentUser(null);
   }
+
+  //🎓🎓[GRID]🎓🎓 FIXING the content even when we scroll down 👇
   return (
     <div className="flex items-center justify-between mt-14 ml-10">
       <img

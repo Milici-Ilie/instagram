@@ -303,8 +303,10 @@
                                                         ❗❗❗ 💠💠[INPUT BOX/ COMMENTS]💠💠 ❗❗❗
 
     ## ✅VIII. -How to create the GRID with Tailwind CSS
+                -How to create a Fixed part of the GRID when we scroll down another part
+                -How to create sticky side even if we scroll down
 
-[COMPONENTS/Feed.js]/[]
+[COMPONENTS/Feed.js]/[COMPONENTS/MiniProfile.js]
 
                                                               ❗❗❗ 🎓🎓[GRID]🎓🎓 ❗❗❗
 
