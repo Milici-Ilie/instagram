@@ -302,7 +302,11 @@
 
                                                         ❗❗❗ 💠💠[INPUT BOX/ COMMENTS]💠💠 ❗❗❗
 
-    ## ✅VIII. subtitlu
+    ## ✅VIII. -How to create the GRID with Tailwind CSS
+
+[COMPONENTS/Feed.js]/[]
+
+                                                              ❗❗❗ 🎓🎓[GRID]🎓🎓 ❗❗❗
 
     ## ✅IX. subtitlu
 

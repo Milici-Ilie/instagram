@@ -9,6 +9,7 @@ import Suggestions from "./Suggestions";
 export default function Feed() {
   const [currentUser] = useRecoilState(userState);
   return (
+    // 🎓🎓[GRID]🎓🎓 here we are creating the GRID that contains 3 collumns at the begging and at small screens remain only 1 collumn created with 2 small collumns that represent the IMG's and principal content in our case
     <main
       className={`grid ${
         currentUser
@@ -24,6 +25,7 @@ export default function Feed() {
         <Posts />
       </section>
 
+      {/* 🎓🎓[GRID]🎓🎓 .. 👇 .. 🎓🎓[GRID]🎓🎓 */}
       <section className="hidden md:inline-grid md:col-span-1">
         <div className="fixed w-[380px]">
           {/* Mini Profile */}
