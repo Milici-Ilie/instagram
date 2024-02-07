@@ -310,7 +310,12 @@
 
                                                               ❗❗❗ 🎓🎓[GRID]🎓🎓 ❗❗❗
 
-    ## ✅IX. subtitlu
+    ## ✅IX. -How to create the 'Suggestion for you', friends to add
+              -Dynamic list with minifaker profiles
+
+[COMPONENTS/Suggestions.js]/[]
+
+                                                              ❗❗❗ 🍭🍭[SUGGESTION FOR YOU]🍭🍭 ❗❗❗
 
     ## ✅X. subtitlu
 

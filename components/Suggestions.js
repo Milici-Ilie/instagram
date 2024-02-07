@@ -2,14 +2,15 @@ import minifaker from "minifaker";
 import "minifaker/locales/en";
 import { useEffect, useState } from "react";
 
+// 🍭🍭[SUGGESTION FOR YOU]🍭🍭 creatin the Suggestion section === here also we use 'minifaker', for more details about this check the previous lessons about 'minifakers'
 export default function Suggestions() {
-  const [suggestions, setSuggestions] = useState([]);
+  const [suggestions, setSuggestions] = useState([]); //🍭🍭[SUGGESTION FOR YOU]🍭🍭 here will be added the suggestion peoples
   useEffect(() => {
     const suggestions = minifaker.array(5, (i) => ({
       username: minifaker.username({ locale: "en" }).toLowerCase(),
       jobTitle: minifaker.jobTitle(),
       id: i,
-    }));
+    })); //🍭🍭[SUGGESTION FOR YOU]🍭🍭 creating the 'minifaker' profiles list === we are displaying the name, that should be in english 'en' and also the job title of those peoples. The 'id' will be equal to index (i) === also in these array will be displayed only 5 minifaker profiles .... here we are getting only the data from the 'minifaker', to display those info's check the 'return' from bellow
     setSuggestions(suggestions);
   }, []);
   return (
@@ -30,6 +31,7 @@ export default function Suggestions() {
             )}`}
             alt=""
           />
+          {/* 🍭🍭[SUGGESTION FOR YOU]🍭🍭 here is the IMG of minifaker profiles and also check the <div> ... </div> from bellow 👇 */}
           <div className="flex-1 ml-4">
             <h2 className="font-semibold text-sm">{suggestion.username}</h2>
             <h3 className="text-sm text-gray-400 truncate w-[230px]">
