@@ -317,9 +317,28 @@
 
                                                               ❗❗❗ 🍭🍭[SUGGESTION FOR YOU]🍭🍭 ❗❗❗
 
-    ## ✅X. subtitlu
+    ## ✅X. -How to connect with GOOGLE Account/email/gmail address
+             -How to connect with NextAuth
+             -How to create connection with email or gmail adress
+             -How to use NextAuth from NextJS
+             -How to use Google Provider as a LOG IN for accounts
+             -How to implement NextAuth and how to use it [Lesson.45.Instagram.Clone]
+             -How to install Firebase
+             -How to use Firebase [Lesson.45.Instagram.Title.Install next-auth an firebase]
+             -How to hide you'r Firebase data/info's from other users, check [.env.local] & [firebase.js] files
 
-    ## ✅XI. subtitlu
+> https://next-auth.js.org/
+> Install Next-Auth: Terminal -> npm install next-auth
+> Install Firebase: Terminal -> npm install firebase
+> We need to create/add a new project in Firebase
+> At Prpject Settings we will find how to npm install the Firebase and the code that is need it to prepare our project 'Then, initialize Firebase and begin using the SDKs for the products you'd like to use.'
+> How to acces the API from GOOGLE: Search -> Cloud Google ❗===> now acces 'Console' in the top-right ❗===> now go to the Menu (hamburger), API Service, credentials ❗===> now select the project that you need ❗===> Next select from 'OAuth 2.0 Client IDs' the 'edit' from the right Oauth side an copy the: 'Client ID' & 'Client secret' ❗===> now we must copy those 2 in '.env.local' file, go check it ❗===> now go and copy the API_KEY from the firebase, you'l find it in the setting of the 'Project settings'
+
+[PAGES/API/AUTH/(...nextauth).js]/[firebase.js]/[.env.local]
+
+                                                            ❗❗❗ ⏭⏭[Firebase and NextAuth]⏭⏭ ❗❗❗
+
+    ## ✅XI. -
 
     ## ✅XII. subtitlu
 
