@@ -3,6 +3,8 @@ import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { db } from "../../firebase";
 import { doc, getDoc, serverTimestamp, setDoc } from "firebase/firestore";
 import { useRouter } from "next/router";
+
+// 🚦🚥[SIGN IN]🚦🚥
 export default function Signin() {
   const router = useRouter();
   async function onGoogleClick() {

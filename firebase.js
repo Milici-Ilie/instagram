@@ -18,7 +18,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp(); // ternary operator= if there is no 'getApps' than 'initializeApp otherwise simply 'getApp''
-const db = getFirestore(); // db=data base
-const storage = getStorage();
+const db = getFirestore(); // db=data base is taking from the import from above
+const storage = getStorage(); // the storage is taking from the import from above
 
-export { app, db, storage };
+export { app, db, storage }; //aceasta asigură că în aplicație va exista o singură instanță Firebase App, indiferent câte ori ar fi apelat acest cod. Acest lucru este important, deoarece o singură instanță a Firebase App este suficientă pentru a gestiona comunicarea cu serviciile Firebase, cum ar fi Firestore și Storage.

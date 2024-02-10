@@ -338,7 +338,14 @@
 
                                                             ❗❗❗ ⏭⏭[Firebase and NextAuth]⏭⏭ ❗❗❗
 
-    ## ✅XI. -
+    ## ✅XI. -Completing the SIGN IN page
+              -How to create the SIGN IN with google
+
+> How to fit an IMG with Tailwind CSS: 'object-cover'
+
+[PAGES/API/AUTH/(...nextauth).js]/[PAGES/API/AUTH/signin.js]
+
+                                                                ❗❗❗ 🚦🚥[SIGN IN]🚦🚥 ❗❗❗
 
     ## ✅XII. subtitlu
 
