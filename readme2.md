@@ -340,6 +340,7 @@
 
     ## ✅XI. -Completing the SIGN IN page
               -How to create the SIGN IN with google
+              -How to hidden IMG/content in lower screens
 
 > How to fit an IMG with Tailwind CSS: 'object-cover'.
 

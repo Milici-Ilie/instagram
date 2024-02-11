@@ -18,7 +18,7 @@ export default NextAuth({
     }),
   ],
   secret: process.env.SECRET,
-  // 🚦🚥[SIGN IN]🚦🚥 👇
+  // 🚦🚥[SIGN IN]🚦🚥 👇 laso note that if we have more 'providers'/SIGN IN methods we need to import in the 'signin.js' file the 'import {getProviders, signIn} from 'next-auth'', 'getProviders' will give the possibility to Sign In with multiple platforms
   pages: {
     signIn: "/auth/signin",
   },
