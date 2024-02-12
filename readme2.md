@@ -343,6 +343,7 @@
               -How to hidden IMG/content in lower screens
 
 > How to fit an IMG with Tailwind CSS: 'object-cover'.
+> For more info's about how to connect with Google/ etc check the Lesson from Instagram-Clone project, lesson 46
 
 [PAGES/API/AUTH/(...nextauth).js]/[PAGES/API/AUTH/signin.js]
 
