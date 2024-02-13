@@ -5,7 +5,7 @@ import { HomeIcon } from "@heroicons/react/solid";
 import { useRecoilState } from "recoil";
 import { modalState } from "../atom/modalAtom";
 import { useRouter } from "next/router";
-import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth"; //🚦🚥[SIGN IN]🚦🚥 'signOut' configuration from firebase
 import { doc, getDoc } from "firebase/firestore";
 import { userState } from "../atom/userAtom";
 import { db } from "../firebase";
@@ -14,7 +14,7 @@ import { db } from "../firebase";
 
 export default function Header() {
   const [open, setOpen] = useRecoilState(modalState);
-  const [currentUser, setCurrentUser] = useRecoilState(userState);
+  const [currentUser, setCurrentUser] = useRecoilState(userState); //🚦🚥[SIGN IN]🚦🚥 here we are initialized the User LOG IN account
   const router = useRouter();
   const auth = getAuth();
 
@@ -94,15 +94,16 @@ export default function Header() {
                 className="h-6 cursor-pointer hover:scale-125 transition-tranform duration-200 ease-out"
               />
               <img
-                onClick={onSignOut}
-                src={currentUser?.userImg}
+                onClick={onSignOut} //SIGN OUT Button, check the imported 'SignIn' and 'SignOut' 👆
+                src={currentUser?.userImg} //🚦🚥[SIGN IN]🚦🚥 instead of hard coding the IMG we need to do this dynamic
                 alt="user-image"
                 className="h-10 rounded-full cursor-pointer"
               />
             </>
           ) : (
+            // 🚦🚥[SIGN IN]🚦🚥 if the User exist/LOG IN usccessed we show the IMG profile from above 👆 that is wrapped in the <>...</> fragments. {currentUser ? (etc etc)} 🚦🚥[SIGN IN]🚦🚥 also down 👇 we created the <button>...</button> responsible for LOG in
             // 🏠🏠[HOME ICON, PROFILE & MENU]🏠🏠
-            <button onClick={() => router.push("/auth/signin")}>Sign in</button>
+            <button onClick={() => router.push("/auth/signin")}>Sign in</button> //🚦🚥[SIGN IN]🚦🚥 also here we need to implement the Sign In
           )}
         </div>
       </div>

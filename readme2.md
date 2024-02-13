@@ -341,11 +341,13 @@
     ## ✅XI. -Completing the SIGN IN page
               -How to create the SIGN IN with google
               -How to hidden IMG/content in lower screens
+              -How to acces the site only after we LOGED IN
+              -How to get the seesion (acces the site after LOG IN)
 
 > How to fit an IMG with Tailwind CSS: 'object-cover'.
 > For more info's about how to connect with Google/ etc check the Lesson from Instagram-Clone project, lesson 46
 
-[PAGES/API/AUTH/(...nextauth).js]/[PAGES/API/AUTH/signin.js]
+[PAGES/API/AUTH/(...nextauth).js]/[PAGES/API/AUTH/signin.js]/[PAGES/API/_app.js]/[COMPONENTS/Header.js]
 
                                                                 ❗❗❗ 🚦🚥[SIGN IN]🚦🚥 ❗❗❗
 
