@@ -15,7 +15,7 @@ export default function Feed() {
         currentUser
           ? "grid-cols-1 md:grid-cols-3 md:max-w-6xl mx-auto"
           : "grid-cols-1 md:grid-cols-2 md:max-w-3xl mx-auto"
-      }  `}
+      }  `} //👩‍🏫👩‍🏫[DYNAMIC PROFILE DATA]👩‍🏫👩‍🏫 here we create the new aspect of the page if the 'user' is not LOGED IN, if the 'user' is LOG OUT the miniprofile side bar from right must gone, if not than all the page will be restructured, because there will be one collumn dissppear or appear
     >
       <section className="md:col-span-2">
         {/* Stories */}

@@ -22,6 +22,7 @@ export default function Stories() {
     <div className="flex space-x-2 p-6 bg-white mt-8 border-gray-200 border overflow-x-scroll rounded-sm scrollbar-none">
       {/* To make the Overflow on horizontal to be scrooled and not overflowing, write in Tailwind: 'overflow-x-scroll' */}
       {currentUser && (
+        //👩‍🏫👩‍🏫[DYNAMIC PROFILE DATA]👩‍🏫👩‍🏫 here we are created the MiniProfile when the user is LOG IN, the IMG that appears in fron off all the others and have a PLUS sign in the center of it.
         <Story
           img={currentUser?.userImg}
           username={currentUser?.username}

@@ -349,9 +349,14 @@
 
 [PAGES/API/AUTH/(...nextauth).js]/[PAGES/API/AUTH/signin.js]/[PAGES/API/_app.js]/[COMPONENTS/Header.js]
 
-                                                                ❗❗❗ 🚦🚥[SIGN IN]🚦🚥 ❗❗❗
+                                                         ❗❗❗ 🚦🚥[SIGN IN]🚦🚥 ❗❗❗
 
-    ## ✅XII. subtitlu
+    ## ✅XII. -How to take the Profile/data/name/etc. from Google/GitHub account and display it in the App
+               -How to take data from Google Account and use it in the App
+
+[PAGES/API/AUTH/(...nextauth).js]/[COMPONENTS/Feed.js]/[COMPONENTS/MiniProfile.js]/[COMPONENTS/Stories.js]/[COMPONENTS/Story.js]
+
+                                                         ❗❗❗ 👩‍🏫👩‍🏫[DYNAMIC PROFILE DATA]👩‍🏫👩‍🏫 ❗❗❗
 
     ## ✅XIII. subtitlu
 

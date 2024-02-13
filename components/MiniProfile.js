@@ -1,10 +1,10 @@
-import { getAuth, signOut } from "firebase/auth";
+import { getAuth, signOut } from "firebase/auth"; //👩‍🏫👩‍🏫[DYNAMIC PROFILE DATA]👩‍🏫👩‍🏫 need this to import for making the app work
 import { useRecoilState } from "recoil";
 import { userState } from "../atom/userAtom";
 
 export default function MiniProfile() {
-  const [currentUser, setCurrentUser] = useRecoilState(userState);
-  const auth = getAuth();
+  const [currentUser, setCurrentUser] = useRecoilState(userState); //👩‍🏫👩‍🏫[DYNAMIC PROFILE DATA]👩‍🏫👩‍🏫 need it to load the IMG
+  const auth = getAuth(); //👩‍🏫👩‍🏫[DYNAMIC PROFILE DATA]👩‍🏫👩‍🏫
   function onSignOut() {
     signOut(auth);
     setCurrentUser(null);
@@ -15,7 +15,7 @@ export default function MiniProfile() {
     <div className="flex items-center justify-between mt-14 ml-10">
       <img
         className="h-16 rounded-full border p-[2px]"
-        src={currentUser?.userImg}
+        src={currentUser?.userImg} //👩‍🏫👩‍🏫[DYNAMIC PROFILE DATA]👩‍🏫👩‍🏫 dynamic user IMG
         alt="user-image"
       />
       <div className="flex-1 ml-4">

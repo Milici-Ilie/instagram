@@ -23,14 +23,15 @@ export default NextAuth({
     signIn: "/auth/signin",
   },
 
+  //👩‍🏫👩‍🏫[DYNAMIC PROFILE DATA]👩‍🏫👩‍🏫
   callbacks: {
     async session({ session, token, user }) {
       session.user.username = session.user.name
         .split(" ")
         .join("")
-        .toLocaleLowerCase();
-      session.user.uid = token.sub;
-      return session;
+        .toLocaleLowerCase(); //here we are splitting the name with space, than we bring them back togheter with no space and than we make them lower case for the username
+      session.user.uid = token.sub; //'token.sub' is the id that GOOGLE gives us
+      return session; //IN FACT❗❗❗ here we are adding the 'username' and the 'uid=user id' inside of the [array] provided by GOOGLE, and from there we will use those data to display them inside our app, side by PORILE IMG//// ❗❗❗❗❗❗also NOTE that the 'username' is created by the name that is specifie above with .split.join.tolocalelowercase()... but normally you must create a method that the user can create his own 'username', dynamically
     },
-  },
+  }, //👩‍🏫👩‍🏫[DYNAMIC PROFILE DATA]👩‍🏫👩‍🏫 'callbacks' is also offered by NextAuth to make change on data from all our app. for more info's about this ask ChatGPT
 });
