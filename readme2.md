@@ -362,12 +362,14 @@
                 -How to upload images
                 -How to open a Modal Window
                 -How to open a POP-UP Window/content
+                -How to create a Modal with React
 
+> Creating a Modal with React: search on GOOGLE: 'react-modal' =>>> Terminal =>>> 'npm install --save react-modal'
 > For making this work we need to search on google for: 'Recoil.js'
 > Terminal: 'npm install recoil'
 > Install recoil and add atom and UploadModal component, this is the name of the IMG
 
-[COMPONENTS/UploadModal.js]/[PAGES/index.js]/[Lesson.49]/[PAGES/_app.js]/[ATOM/modalAtom.js]/[COMPONENTS/Header.js]
+[COMPONENTS/UploadModal.js]/[PAGES/index.js]/[Lesson.49-50]/[PAGES/_app.js]/[ATOM/modalAtom.js]/[COMPONENTS/Header.js]
 
                                                          ❗❗❗ 💨💨[UPLOADING IMG's]💨💨 ❗❗❗
 

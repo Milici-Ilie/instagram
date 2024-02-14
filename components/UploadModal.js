@@ -1,6 +1,6 @@
 import { useRecoilState } from "recoil"; //💨💨[UPLOADING IMG's]💨💨
 import { modalState } from "../atom/modalAtom"; //💨💨[UPLOADING IMG's]💨💨
-import Modal from "react-modal";
+import Modal from "react-modal"; //💨💨[UPLOADING IMG's]💨💨 here we create the Modal in the React
 import { CameraIcon } from "@heroicons/react/outline";
 import { useRef, useState } from "react";
 import {
@@ -16,7 +16,7 @@ import { userState } from "../atom/userAtom";
 
 // 💨💨[UPLOADING IMG's]💨💨
 export default function UploadModal() {
-  const [open, setOpen] = useRecoilState(modalState);
+  const [open, setOpen] = useRecoilState(modalState); //💨💨[UPLOADING IMG's]💨💨 we need this for our ModalWindow React to open and close
   const [selectedFile, setSelectedFile] = useState(null);
   const [loading, setLoading] = useState(false);
   const [currentUser] = useRecoilState(userState);
@@ -60,6 +60,7 @@ export default function UploadModal() {
   const captionRef = useRef(null);
   return (
     <div>
+      {/* 💨💨[UPLOADING IMG's]💨💨 here we are creating the ModalWindow with React. NOTE that the code from bellow you can copy from the site 'react-modal -npm' */}
       {open && (
         <Modal
           className="max-w-lg w-[90%] p-6 absolute top-56 left-[50%] translate-x-[-50%] bg-white border-2 rounded-md shadow-md"
