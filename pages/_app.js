@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import { SessionProvider } from "next-auth/react"; //🚦🚥[SIGN IN]🚦🚥 also we need to import this 'SessionProvider' to make this work for our LOG IN/////
-import { RecoilRoot } from "recoil";
+import { RecoilRoot } from "recoil"; //💨💨[UPLOADING IMG's]💨💨 we need to import this to make the App work, check down 👇 how we must wrad everything inside of <RecoilRoot>.. ur foe</RecoilRoot>
 
 //🚦🚥[SIGN IN]🚦🚥 NOTE❗❗ here we have all our App, if we wrap this with 'SessionProvider'/imported above 👆 than the app will be accessed only after the user passed that step, meaning he must LOG IN first to acces the app
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {

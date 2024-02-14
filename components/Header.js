@@ -2,8 +2,8 @@ import Image from "next/image";
 import { useEffect } from "react";
 import { SearchIcon, PlusCircleIcon } from "@heroicons/react/outline"; //🔎🔎[SEARCH BAR & TCSS]🔎🔎 importing the icons
 import { HomeIcon } from "@heroicons/react/solid";
-import { useRecoilState } from "recoil";
-import { modalState } from "../atom/modalAtom";
+import { useRecoilState } from "recoil"; //💨💨[UPLOADING IMG's]💨💨
+import { modalState } from "../atom/modalAtom"; //💨💨[UPLOADING IMG's]💨💨
 import { useRouter } from "next/router";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth"; //🚦🚥[SIGN IN]🚦🚥 'signOut' configuration from firebase
 import { doc, getDoc } from "firebase/firestore";
@@ -13,7 +13,7 @@ import { db } from "../firebase";
 //🎧🎧[HEADER COMPONENT]🎧🎧
 
 export default function Header() {
-  const [open, setOpen] = useRecoilState(modalState);
+  const [open, setOpen] = useRecoilState(modalState); //💨💨[UPLOADING IMG's]💨💨
   const [currentUser, setCurrentUser] = useRecoilState(userState); //🚦🚥[SIGN IN]🚦🚥 here we are initialized the User LOG IN account
   const router = useRouter();
   const auth = getAuth();

@@ -1,5 +1,5 @@
-import { useRecoilState } from "recoil";
-import { modalState } from "../atom/modalAtom";
+import { useRecoilState } from "recoil"; //💨💨[UPLOADING IMG's]💨💨
+import { modalState } from "../atom/modalAtom"; //💨💨[UPLOADING IMG's]💨💨
 import Modal from "react-modal";
 import { CameraIcon } from "@heroicons/react/outline";
 import { useRef, useState } from "react";
@@ -14,11 +14,12 @@ import { db, storage } from "../firebase";
 import { getDownloadURL, ref, uploadString } from "firebase/storage";
 import { userState } from "../atom/userAtom";
 
+// 💨💨[UPLOADING IMG's]💨💨
 export default function UploadModal() {
   const [open, setOpen] = useRecoilState(modalState);
   const [selectedFile, setSelectedFile] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [currentUser] = useRecoilState(userState)
+  const [currentUser] = useRecoilState(userState);
   async function uploadPost() {
     if (loading) return;
 

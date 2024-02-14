@@ -21,6 +21,7 @@ export default function Home() {
       <Feed />
 
       {/* Modal */}
+      {/* 💨💨[UPLOADING IMG's]💨💨 */}
 
       <UploadModal />
     </div>
