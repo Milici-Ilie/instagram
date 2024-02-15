@@ -375,7 +375,15 @@
 
                                                          ❗❗❗ 💨💨[UPLOADING IMG's]💨💨 ❗❗❗
 
-    ## ✅XIV. subtitlu
+    ## ✅XIV. -How to create Post's and add them to Firebase
+               -How to upload data/info's to Firebase data base
+               -How to take URL from Firebase after uploading files/data/text/img's/etc
+
+> For more info's about Firebase and how to work with it in this situation check the [Lesson.52] from Instagram Clone section, title 'Create a post and add it to firestore and get the download URL'
+
+[COMPONENTS/UploadModal.js]/[firebase.js]/[]
+
+                                                         ❗❗❗ 🔥🔥[UPLOADING FIREBASE]🔥🔥 ❗❗❗
 
     ## ✅XV. subtitlu
 

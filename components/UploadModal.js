@@ -9,19 +9,19 @@ import {
   doc,
   serverTimestamp,
   updateDoc,
-} from "firebase/firestore";
-import { db, storage } from "../firebase";
-import { getDownloadURL, ref, uploadString } from "firebase/storage";
+} from "firebase/firestore"; //🔥🔥[UPLOADING FIRESTORE]🔥🔥 all of those are need it to store IMG's in the FIREBASE
+import { db, storage } from "../firebase"; //🔥🔥[UPLOADING FIRESTORE]🔥🔥 laso need it to store IMG's
+import { getDownloadURL, ref, uploadString } from "firebase/storage"; //🔥🔥[UPLOADING FIRESTORE]🔥🔥
 import { userState } from "../atom/userAtom";
 
 // 💨💨[UPLOADING IMG's]💨💨
 export default function UploadModal() {
   const [open, setOpen] = useRecoilState(modalState); //💨💨[UPLOADING IMG's]💨💨 we need this for our ModalWindow React to open and close
   const [selectedFile, setSelectedFile] = useState(null); //💨💨[UPLOADING IMG's]💨💨 here we want to use this to show what IMG the user want to upload, first is 'null' than will be 'true' when the IMG is uploaded
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false); //🔥🔥[UPLOADING FIRESTORE]🔥🔥 to prevent the user to upload more img's at once
   const [currentUser] = useRecoilState(userState);
   async function uploadPost() {
-    if (loading) return;
+    if (loading) return; //🔥🔥[UPLOADING FIRESTORE]🔥🔥
 
     setLoading(true);
 
@@ -29,8 +29,8 @@ export default function UploadModal() {
       caption: captionRef.current.value,
       username: currentUser?.username,
       profileImg: currentUser.userImg,
-      timestamp: serverTimestamp(),
-    });
+      timestamp: serverTimestamp(), //this is provided from firebase/firestore
+    }); //🔥🔥[UPLOADING FIRESTORE]🔥🔥 this will upload the img and also prevent the user to upload more img's at once
 
     const imageRef = ref(storage, `posts/${docRef.id}/image`);
     await uploadString(imageRef, selectedFile, "data_url").then(
@@ -40,11 +40,11 @@ export default function UploadModal() {
           image: downloadURL,
         });
       }
-    );
+    ); //🔥🔥[UPLOADING FIRESTORE]🔥🔥 need it to store the IMG in the 'STORAGE' from the Firebase
     setOpen(false);
     setLoading(false);
     setSelectedFile(null);
-  }
+  } //🔥🔥[UPLOADING FIRESTORE]🔥🔥 here we are making latest change to close the modal after the image is uploaded and more stuffs like this
 
   function addImageToPost(event) {
     const reader = new FileReader();
@@ -58,7 +58,7 @@ export default function UploadModal() {
     // 💨💨[UPLOADING IMG's]💨💨 this is also need it to upload and see the IMG that is uploaded
   }
   const filePickerRef = useRef(null); //💨💨[UPLOADING IMG's]💨💨 also we need this to upload IMG's
-  const captionRef = useRef(null);
+  const captionRef = useRef(null); //🔥🔥[UPLOADING FIRESTORE]🔥🔥
   return (
     <div>
       {/* 💨💨[UPLOADING IMG's]💨💨 here we are creating the ModalWindow with React. NOTE that the code from bellow you can copy from the site 'react-modal -npm' */}
@@ -104,7 +104,8 @@ export default function UploadModal() {
             {/* 💨💨[UPLOADING IMG's]💨💨 this is the input bellow the camera ICON that upload IMG's. Here we add a text/comment to our post */}
             <button
               disabled={!selectedFile || loading}
-              onClick={uploadPost}
+              // 🔥🔥[UPLOADING FIRESTORE]🔥🔥 also for uploading img's
+              onClick={uploadPost} //🔥🔥[UPLOADING FIRESTORE]🔥🔥
               className="w-full bg-red-600 text-white p-2 shadow-md hover:brightness-125 disabled:bg-gray-200 disabled:cursor-not-allowed disabled:hover:brightness-100"
             >
               Upload Post
