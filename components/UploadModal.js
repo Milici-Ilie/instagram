@@ -1,7 +1,7 @@
 import { useRecoilState } from "recoil"; //💨💨[UPLOADING IMG's]💨💨
 import { modalState } from "../atom/modalAtom"; //💨💨[UPLOADING IMG's]💨💨
 import Modal from "react-modal"; //💨💨[UPLOADING IMG's]💨💨 here we create the Modal in the React
-import { CameraIcon } from "@heroicons/react/outline";
+import { CameraIcon } from "@heroicons/react/outline"; //💨💨[UPLOADING IMG's]💨💨 icon for the camera when we open the Window Modal
 import { useRef, useState } from "react";
 import {
   addDoc,
@@ -56,7 +56,7 @@ export default function UploadModal() {
       setSelectedFile(readerEvent.target.result);
     };
   }
-  const filePickerRef = useRef(null);
+  const filePickerRef = useRef(null); //💨💨[UPLOADING IMG's]💨💨 also we need this to upload IMG's
   const captionRef = useRef(null);
   return (
     <div>
@@ -83,6 +83,7 @@ export default function UploadModal() {
                 onClick={() => filePickerRef.current.click()}
                 className="cursor-pointer h-14 bg-red-200 p-2 rounded-full border-2 text-red-500"
               />
+              // 💨💨[UPLOADING IMG's]💨💨 Camera Icon & opening the folder for uploading IMG's when clicking the camera IMG icon
             )}
 
             <input

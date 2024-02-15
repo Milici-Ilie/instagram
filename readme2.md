@@ -363,6 +363,8 @@
                 -How to open a Modal Window
                 -How to open a POP-UP Window/content
                 -How to create a Modal with React
+                -How to upload data/info's to Firebase Database
+                -How to sent data to Firebase, ex: IMG's, titles (text), etc
 
 > Creating a Modal with React: search on GOOGLE: 'react-modal' =>>> Terminal =>>> 'npm install --save react-modal'
 > For making this work we need to search on google for: 'Recoil.js'
