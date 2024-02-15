@@ -17,7 +17,7 @@ import { userState } from "../atom/userAtom";
 // 💨💨[UPLOADING IMG's]💨💨
 export default function UploadModal() {
   const [open, setOpen] = useRecoilState(modalState); //💨💨[UPLOADING IMG's]💨💨 we need this for our ModalWindow React to open and close
-  const [selectedFile, setSelectedFile] = useState(null);
+  const [selectedFile, setSelectedFile] = useState(null); //💨💨[UPLOADING IMG's]💨💨 here we want to use this to show what IMG the user want to upload, first is 'null' than will be 'true' when the IMG is uploaded
   const [loading, setLoading] = useState(false);
   const [currentUser] = useRecoilState(userState);
   async function uploadPost() {
@@ -50,11 +50,12 @@ export default function UploadModal() {
     const reader = new FileReader();
     if (event.target.files[0]) {
       reader.readAsDataURL(event.target.files[0]);
-    }
+    } //💨💨[UPLOADING IMG's]💨💨  this is need it also to see the IMG when the user uploade it from the computer to see what img is uploading
 
     reader.onload = (readerEvent) => {
       setSelectedFile(readerEvent.target.result);
     };
+    // 💨💨[UPLOADING IMG's]💨💨 this is also need it to upload and see the IMG that is uploaded
   }
   const filePickerRef = useRef(null); //💨💨[UPLOADING IMG's]💨💨 also we need this to upload IMG's
   const captionRef = useRef(null);
@@ -69,6 +70,7 @@ export default function UploadModal() {
             setOpen(false);
             setSelectedFile(null);
           }}
+          // here we are closing the selected IMG when we click on the IMG that we already selected and we want to choose another IMG, also we reset the IMG if the user is closing the WINDOW MODAL, when the MODAL will be oppen again the modal will be empty, only the camera ICON for uploading IMG's
         >
           <div className="flex flex-col justify-center items-center h-[100%]">
             {selectedFile ? (
@@ -99,6 +101,7 @@ export default function UploadModal() {
               className="m-4 border-none text-center w-full focus:ring-0"
               ref={captionRef}
             />
+            {/* 💨💨[UPLOADING IMG's]💨💨 this is the input bellow the camera ICON that upload IMG's. Here we add a text/comment to our post */}
             <button
               disabled={!selectedFile || loading}
               onClick={uploadPost}
@@ -106,6 +109,7 @@ export default function UploadModal() {
             >
               Upload Post
             </button>
+            {/* 💨💨[UPLOADING IMG's]💨💨 here we are creating also a 'disable mode' for the button when there are no IMG's or text included */}
           </div>
         </Modal>
       )}
