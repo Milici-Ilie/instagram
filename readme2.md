@@ -401,11 +401,18 @@
     ## ✅XVII. -How too add comments to the Firebase
                 -How too store comments in the Firestore
 
-[COMPONENTS/Post.js]/[]
+[COMPONENTS/Post.js]/[Lesson.55]
 
                                                          ❗❗❗ 🧯🧯[ADDING COMMENTS TO FIREBASE]🧯🧯 ❗❗❗
 
-    ## ✅XVIII. subtitlu
+    ## ✅XVIII. -How to take data from Firebase database and display it in the app
+
+> How to display exact time with React moment 'https://www.npmjs.com/package/react-moment'
+> Terminal: 'npm install --save moment react-moment'
+
+[Lesson.56]/[COMPONENTS/Post.js]
+
+                                                            ❗❗❗ 🌠🌠[DATA FROM FIREBASE]🌠🌠 ❗❗❗
 
     ## ✅XIX. subtitlu
 

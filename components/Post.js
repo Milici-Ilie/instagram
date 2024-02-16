@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Moment from "react-moment";
+import Moment from "react-moment"; //🌠🌠[DATA FROM FIREBASE]🌠🌠
 import { db } from "../firebase"; //🧯🧯[ADDING COMMENTS TO FIREBASE]🧯🧯
 import {
   DotsHorizontalIcon,
@@ -27,7 +27,7 @@ import { userState } from "../atom/userAtom";
 export default function Post({ img, userImg, caption, username, id }) {
   // 💽💽[ANOTHER COMPONENT]💽💽 here we are desctructuring the PROPS for 'Posts.js' file to send the info's
   const [comment, setComment] = useState(""); //🧯🧯[ADDING COMMENTS TO FIREBASE]🧯🧯
-  const [comments, setComments] = useState([]);
+  const [comments, setComments] = useState([]); //🌠🌠[DATA FROM FIREBASE]🌠🌠 we need this 'useState' to take info's from Firebase
   const [likes, setLikes] = useState([]);
   const [hasLiked, setHasLiked] = useState(false);
   const [currentUser] = useRecoilState(userState);
@@ -41,7 +41,7 @@ export default function Post({ img, userImg, caption, username, id }) {
         setComments(snapshot.docs);
       }
     );
-  }, [db, id]);
+  }, [db, id]); //🌠🌠[DATA FROM FIREBASE]🌠🌠 also is need it this 'useEffect' to display the data from Firebase database
   useEffect(() => {
     const unsubscribe = onSnapshot(
       collection(db, "posts", id, "likes"),
@@ -123,6 +123,7 @@ export default function Post({ img, userImg, caption, username, id }) {
         <span className="font-bold mr-2">{username}</span>
         {caption}
       </p>
+      {/* 🌠🌠[DATA FROM FIREBASE]🌠🌠 👇 */}
       {comments.length > 0 && (
         <div className="mx-10 max-h-24 overflow-y-scroll scrollbar-none">
           {comments.map((comment) => (
@@ -142,6 +143,7 @@ export default function Post({ img, userImg, caption, username, id }) {
           ))}
         </div>
       )}
+      {/* 🌠🌠[DATA FROM FIREBASE]🌠🌠 👆 'fromNow' will take the time from the moment the user enter a pic or a comment */}
 
       {/* 💠💠[INPUT BOX/ COMMENTS]💠💠 👇 */}
       {/* Post input box */}
