@@ -398,7 +398,12 @@
 
                                                          ❗❗❗ 👤👤[HIDDING CONTENT WHEN LOGG OUT]👤👤 ❗❗❗
 
-    ## ✅XVII. subtitlu
+    ## ✅XVII. -How too add comments to the Firebase
+                -How too store comments in the Firestore
+
+[COMPONENTS/Post.js]/[]
+
+                                                         ❗❗❗ 🧯🧯[ADDING COMMENTS TO FIREBASE]🧯🧯 ❗❗❗
 
     ## ✅XVIII. subtitlu
 

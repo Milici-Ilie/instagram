@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Moment from "react-moment";
-import { db } from "../firebase";
+import { db } from "../firebase"; //🧯🧯[ADDING COMMENTS TO FIREBASE]🧯🧯
 import {
   DotsHorizontalIcon,
   HeartIcon,
@@ -19,14 +19,14 @@ import {
   query,
   serverTimestamp,
   setDoc,
-} from "firebase/firestore";
+} from "firebase/firestore"; //🧯🧯[ADDING COMMENTS TO FIREBASE]🧯🧯
 import { useRecoilState } from "recoil";
 import { userState } from "../atom/userAtom";
 
 // 💽💽[ANOTHER COMPONENT]💽💽
 export default function Post({ img, userImg, caption, username, id }) {
   // 💽💽[ANOTHER COMPONENT]💽💽 here we are desctructuring the PROPS for 'Posts.js' file to send the info's
-  const [comment, setComment] = useState("");
+  const [comment, setComment] = useState(""); //🧯🧯[ADDING COMMENTS TO FIREBASE]🧯🧯
   const [comments, setComments] = useState([]);
   const [likes, setLikes] = useState([]);
   const [hasLiked, setHasLiked] = useState(false);
@@ -69,7 +69,7 @@ export default function Post({ img, userImg, caption, username, id }) {
       username: currentUser?.username,
       userImage: currentUser?.userImg,
       timestamp: serverTimestamp(),
-    });
+    }); //🧯🧯[ADDING COMMENTS TO FIREBASE]🧯🧯
   }
   return (
     <div className="bg-white my-7 border rounded-md">
@@ -150,15 +150,15 @@ export default function Post({ img, userImg, caption, username, id }) {
           <EmojiHappyIcon className="h-7" />
           <input
             value={comment}
-            onChange={(event) => setComment(event.target.value)}
+            onChange={(event) => setComment(event.target.value)} //🧯🧯[ADDING COMMENTS TO FIREBASE]🧯🧯 getting the info from the input field
             className="border-none flex-1 focus:ring-0"
             type="text"
             placeholder="Enter your comment..."
           />
           <button
             type="submit"
-            onClick={sendComment}
-            disabled={!comment.trim()}
+            onClick={sendComment} //🧯🧯[ADDING COMMENTS TO FIREBASE]🧯🧯
+            disabled={!comment.trim()} //🧯🧯[ADDING COMMENTS TO FIREBASE]🧯🧯 here we are disabling the button when there are no comments. we prevent a comment to be blank, for exemple multiplce SPACES and no comment, we write '.trim()'
             className="text-blue-400 font-bold disabled:text-blue-200"
           >
             Post
