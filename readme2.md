@@ -381,11 +381,16 @@
 
 > For more info's about Firebase and how to work with it in this situation check the [Lesson.52] from Instagram Clone section, title 'Create a post and add it to firestore and get the download URL'
 
-[COMPONENTS/UploadModal.js]/[firebase.js]/[]
+[COMPONENTS/UploadModal.js]/[firebase.js]/[Lesson.52]
 
                                                          ❗❗❗ 🔥🔥[UPLOADING FIREBASE]🔥🔥 ❗❗❗
 
-    ## ✅XV. subtitlu
+    ## ✅XV. -How to take data from Firebase
+              -How to display content/info's from FireStore data base
+
+[Lesson.53]/[COMPONENTS/Posts.js]
+
+                                                         ❗❗❗ 🧨🧨[DISPLAYING FIREBASE DATA]🧨🧨 ❗❗❗
 
     ## ✅XVI. subtitlu
 
