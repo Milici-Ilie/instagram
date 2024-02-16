@@ -392,7 +392,11 @@
 
                                                          ❗❗❗ 🧨🧨[DISPLAYING FIREBASE DATA]🧨🧨 ❗❗❗
 
-    ## ✅XVI. subtitlu
+    ## ✅XVI. -How to hide Buttons, userIMG and more when the User is LOGGED OUT
+
+[COMPONENTS/Post.js]/[COMPONENTS/Header.js]
+
+                                                         ❗❗❗ 👤👤[HIDDING CONTENT WHEN LOGG OUT]👤👤 ❗❗❗
 
     ## ✅XVII. subtitlu
 

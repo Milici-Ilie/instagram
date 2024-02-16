@@ -4,7 +4,7 @@ import { SearchIcon, PlusCircleIcon } from "@heroicons/react/outline"; //🔎�
 import { HomeIcon } from "@heroicons/react/solid";
 import { useRecoilState } from "recoil"; //💨💨[UPLOADING IMG's]💨💨
 import { modalState } from "../atom/modalAtom"; //💨💨[UPLOADING IMG's]💨💨
-import { useRouter } from "next/router";
+import { useRouter } from "next/router"; //👤👤[HIDDING CONTENT WHEN LOGG OUT]👤👤
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth"; //🚦🚥[SIGN IN]🚦🚥 'signOut' configuration from firebase
 import { doc, getDoc } from "firebase/firestore";
 import { userState } from "../atom/userAtom";
@@ -15,7 +15,7 @@ import { db } from "../firebase";
 export default function Header() {
   const [open, setOpen] = useRecoilState(modalState); //💨💨[UPLOADING IMG's]💨💨
   const [currentUser, setCurrentUser] = useRecoilState(userState); //🚦🚥[SIGN IN]🚦🚥 here we are initialized the User LOG IN account
-  const router = useRouter();
+  const router = useRouter(); //👤👤[HIDDING CONTENT WHEN LOGG OUT]👤👤
   const auth = getAuth();
 
   useEffect(() => {
@@ -52,7 +52,7 @@ export default function Header() {
             src="http://www.jennexplores.com/wp-content/uploads/2015/09/Instagram_logo_black.png"
             layout="fill" //🎧🎧[HEADER COMPONENT]🎧🎧 we need also to write the 'layout='fill'' ==== the 'className=...' from bellow it's the Tailwind that make the IMG to fit the cointaer, also above in the <div> ... here ...</div> we also apply some styles with TCSS and also for different screens, mediaqueries
             className="object-contain"
-            onClick={() => router.push("/")}
+            onClick={() => router.push("/")} //👤👤[HIDDING CONTENT WHEN LOGG OUT]👤👤
           />
           {/* 🎧🎧[HEADER COMPONENT]🎧🎧 we dirrectly coppyed the IMG adress, but to make this work we need also to add the link security for this image inside of 'next.config.js', you will now what link because the NextJs will allert you with the message that contains that link */}
         </div>
@@ -61,7 +61,7 @@ export default function Header() {
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/800px-Instagram_logo_2016.svg.png"
             layout="fill"
             className="object-contain"
-            onClick={() => router.push("/")} //🎧🎧[HEADER COMPONENT]🎧🎧 the same thing like the IMG from above 👆 also note that the both IMG's has connection onClick when they are clicked ❗❗❗❗ NOTE -> this logo will replace the original one only when the screeen is smaller, on big screen the image/logo from above will be displayed
+            onClick={() => router.push("/")} //🎧🎧[HEADER COMPONENT]🎧🎧 the same thing like the IMG from above 👆 also note that the both IMG's has connection onClick when they are clicked ❗❗❗❗ NOTE -> this logo will replace the original one only when the screeen is smaller, on big screen the image/logo from above will be displayed ///// 👤👤[HIDDING CONTENT WHEN LOGG OUT]👤👤
           />
         </div>
         {/* Middle */}
@@ -83,7 +83,7 @@ export default function Header() {
 
         <div className="flex space-x-4 items-center">
           <HomeIcon
-            onClick={() => router.push("/")}
+            onClick={() => router.push("/")} //👤👤[HIDDING CONTENT WHEN LOGG OUT]👤👤
             className="hidden md:inline-flex  h-6 cursor-pointer hover:scale-125 transition-tranform duration-200 ease-out"
           />
           {currentUser ? (
