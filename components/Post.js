@@ -28,8 +28,8 @@ export default function Post({ img, userImg, caption, username, id }) {
   // 💽💽[ANOTHER COMPONENT]💽💽 here we are desctructuring the PROPS for 'Posts.js' file to send the info's
   const [comment, setComment] = useState(""); //🧯🧯[ADDING COMMENTS TO FIREBASE]🧯🧯
   const [comments, setComments] = useState([]); //🌠🌠[DATA FROM FIREBASE]🌠🌠 we need this 'useState' to take info's from Firebase
-  const [likes, setLikes] = useState([]);
-  const [hasLiked, setHasLiked] = useState(false);
+  const [likes, setLikes] = useState([]); //💡💡[LIKE FUNCTIONALITY]💡💡 getting the likes
+  const [hasLiked, setHasLiked] = useState(false); //💡💡[LIKE FUNCTIONALITY]💡💡
   const [currentUser] = useRecoilState(userState);
   useEffect(() => {
     const unsubscribe = onSnapshot(
@@ -50,8 +50,9 @@ export default function Post({ img, userImg, caption, username, id }) {
   }, [db]);
   useEffect(() => {
     setHasLiked(likes.findIndex((like) => like.id === currentUser?.uid) !== -1);
-  }, [likes]);
+  }, [likes]); //💡💡[LIKE FUNCTIONALITY]💡💡 to like and dislike
   async function likePost() {
+    // 💡💡[LIKE FUNCTIONALITY]💡💡 👇
     if (hasLiked) {
       await deleteDoc(doc(db, "posts", id, "likes", currentUser?.uid));
     } else {
@@ -60,6 +61,7 @@ export default function Post({ img, userImg, caption, username, id }) {
       });
     }
   }
+  // 💡💡[LIKE FUNCTIONALITY]💡💡
   async function sendComment(event) {
     event.preventDefault();
     const commentToSend = comment;
@@ -92,7 +94,7 @@ export default function Post({ img, userImg, caption, username, id }) {
       {/* the 'img' from 'src={img}' we are getting as a PROPS from the above funtion 👆 */}
 
       {/* Post Buttons  */}
-
+      {/* 💡💡[LIKE FUNCTIONALITY]💡💡 👇 */}
       {currentUser && (
         <div className="flex justify-between px-4 pt-4">
           <div className="flex space-x-4">

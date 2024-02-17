@@ -416,7 +416,7 @@
 
     ## ✅XIX. -How to apply like functionality from different accounts
 
-[]/[]
+[COMPONENTS/Post.js]/[Lesson.57]
 
                                                             ❗❗❗ 💡💡[LIKE FUNCTIONALITY]💡💡 ❗❗❗
 
