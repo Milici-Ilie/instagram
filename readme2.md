@@ -414,7 +414,11 @@
 
                                                             ❗❗❗ 🌠🌠[DATA FROM FIREBASE]🌠🌠 ❗❗❗
 
-    ## ✅XIX. subtitlu
+    ## ✅XIX. -How to apply like functionality from different accounts
+
+[]/[]
+
+                                                            ❗❗❗ 💡💡[LIKE FUNCTIONALITY]💡💡 ❗❗❗
 
     ## ✅XX. subtitlu
 
