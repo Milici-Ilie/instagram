@@ -1,5 +1,5 @@
 import Header from "../../components/Header";
-import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth"; //⏭⏭[AUTH AUTHENTICATION]⏭⏭
 import { db } from "../../firebase";
 import { doc, getDoc, serverTimestamp, setDoc } from "firebase/firestore";
 import { useRouter } from "next/router";
@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 // 🚦🚥[SIGN IN]🚦🚥
 export default function Signin() {
   const router = useRouter();
+  //⏭⏭[AUTH AUTHENTICATION]⏭⏭ 👇
   async function onGoogleClick() {
     try {
       const auth = getAuth();

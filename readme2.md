@@ -420,7 +420,13 @@
 
                                                             ❗❗❗ 💡💡[LIKE FUNCTIONALITY]💡💡 ❗❗❗
 
-    ## ✅XX. subtitlu
+    ## ✅XX. -Changing 'next-auth' with 'add firebase auth' authentication
+
+> Lesson 60, Update 2 from section Instagram
+
+[PAGES/AUTH/sigin.js]/[]
+
+                                                        ❗❗❗ ⏭⏭[AUTH AUTHENTICATION]⏭⏭ ❗❗❗
 
 # 4. Titlu
 
